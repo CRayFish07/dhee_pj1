@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+#gold{
+	height:768px;
+	width:100%;
+}
+#gold input{
+	color:#000;
+	font-size:14px;
+}
+.left{
+	position:relative;
+	top:20px;
+	float:left;
+	width:50%;
+	height:500px;
+		}
+.right{
+	position:relative;
+	top:20px;
+	float:left;
+	width:50%;
+	height:500px;
+	}
+#gold ul{
+	position:relative;
+	}
+#gold ul>li{
+	position:relative;
+	float:left;
+	height:50px;
+	width:100%;
+	list-style:none;
+	text-align:right;
+	line-height:50px;
+	display:inline-block;
+	}
+.text1{
+	position:relative;
+	width:50%;
+	height:35px;
+	margin-right:10%;
+	border:1px solid #9E9D9D;
+	border-radius:4px;
+	color:#000;
+	}
+.sp{
+	position:relative;
+	margin-right:20px;
+	}
+.text2{
+	position:relative;
+	width:50%;
+	height:35px;
+	margin-right:30%;
+	border:1px solid #9E9D9D;
+	border-radius:4px;
+	text-indent:12px;
+	color:#000;
+	}
+.div_text{
+	position:relative;
+	float:right;
+	margin-right:10%;
+	width:50%;
+	height:50px;
+	text-align:left;
+	}
+.radio2{
+	position:relative;
+	margin-left:30px;
+	}
+.bottom{
+	position: absolute;
+	top:550px;
+	width:200px;
+	height:45px;
+	background:#4ED361;
+	left:50%;
+	margin-left:-100px;
+	border-radius:4px;
+	color:#FCFCFC;
+	font-size:24px;
+	font-weight:800;
+	line-height:45px;
+	text-align:center;
+	cursor:pointer;
+	}
+.left>ul>li>input{
+		text-indent:12px;
+}
+#gold input {
+    color: #000;
+}
