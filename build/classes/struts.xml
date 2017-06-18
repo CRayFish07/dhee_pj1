@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="false" /><!--struts.devMode表示Struts的开发模式，值为true时，项目更改立即生效 -->
+
+	<package name="Student" namespace="/" extends="struts-default">
+
+		<interceptors><!--验证是否登录 -->
+			<interceptor name="LoginAI" class="com.dhee.interceptor.LoginAI" />
+		</interceptors>
+
+		<action name="student_*" class="com.dhee.action.StudentAction"
+			method="{1}">
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="LoginAI" />
+		</action>
+
+		<action name="studentInit_*" class="com.dhee.action.StudentAction"
+			method="{1}">
+		</action>
+
+	</package>
+
+	<package name="Teacher" namespace="/" extends="struts-default">
+	
+		<interceptors><!--验证是否登录 -->
+			<interceptor name="LoginAI2" class="com.dhee.interceptor.LoginAI2" />
+		</interceptors>
+		
+		<action name="teacher_*" class="com.dhee.action.TeacherAction"
+			method="{1}">
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="LoginAI2" />
+		</action>
+		
+		<action name="teacherInit_*" class="com.dhee.action.TeacherAction"
+			method="{1}">
+		</action>
+		
+	</package>
+
+</struts>
